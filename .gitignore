@@ -48,9 +48,9 @@ Thumbs.db
 .env.local
 .env.production
 
-# Docker (optional - only if you have sensitive data in docker-compose)
-# docker-compose.yml
-# docker-compose.override.yml
+# Docker
+docker-compose.yml
+docker-compose.override.yml
 
 # Application properties with secrets (if you have separate files)
 application-local.properties
