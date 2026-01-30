@@ -1,0 +1,12 @@
+Projects:
+- list all projects
+- get a single project
+- create a new project
+- update a project
+- delete a project
+
+Resume:
+- download/view cv
+- upload a new cv
+- update existing cv
+- remove the cv
