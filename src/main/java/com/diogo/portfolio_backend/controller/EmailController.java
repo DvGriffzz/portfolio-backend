@@ -6,6 +6,8 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+
 @RestController
 @RequestMapping("/api")
 public class EmailController {
@@ -20,7 +22,7 @@ public class EmailController {
             @RequestParam String subject,
             @RequestParam String text,
             @AuthenticationPrincipal UserDetails userDetails // inject current user
-    ) {
+    ) throws IOException {
         emailService.sendEmail(to, subject, text);
         return ResponseEntity.ok("Email sent to " + to + " by user " + userDetails.getUsername());
     }
